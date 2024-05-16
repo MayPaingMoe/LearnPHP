@@ -28,3 +28,5 @@ var_dump($asso);
 echo "<br>";
 
 print_r($asso);
+echo "$asso[School]";
+echo "<br>";
