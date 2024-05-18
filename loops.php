@@ -74,10 +74,5 @@
       foreach($menber as $x => $y);
       echo "$x:$y";
 
-      function mymeg(){
-        echo "Hello World";
-      }
-
-      mymeg();
 
 
