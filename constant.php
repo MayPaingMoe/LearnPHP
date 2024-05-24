@@ -25,3 +25,6 @@ if($money){
     }
     
 }
+
+define("Name","Mie");
+echo "Name";
