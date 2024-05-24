@@ -10,4 +10,6 @@ echo "<br>";
 // require "new.php";
 // require "homeworks.php";
 //require "functions.php";
-require "oop.php";//call the oop php
+// require "class(and)obj.php";//call the oop php
+// require "constructor(oop).php";
+require "inheritance.php";
