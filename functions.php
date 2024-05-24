@@ -38,3 +38,8 @@ function sub($x=30,$y=20){
 echo sub();
 echo "<br>";
 echo "<br>";
+
+function mie(){
+    echo "Hello Mie";
+}
+mie();
