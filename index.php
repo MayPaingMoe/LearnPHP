@@ -9,4 +9,5 @@ echo "<br>";
 // require "constant.php";
 // require "new.php";
 // require "homeworks.php";
-require "functions.php";
+//require "functions.php";
+require "oop.php";
