@@ -210,7 +210,7 @@ echo "<br>";
 
 // <=	Less than or equal to
 if($var1 <= $var2){
-    echo "Equal";
+    echo "It's Equal";
 }
 else{
     echo "Not Equal";
