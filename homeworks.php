@@ -9,7 +9,8 @@ var_dump($index);
 echo "<br>";
 $index[]=[5,6,7,8,9,10];
 print_r($index);
-
+echo "$index[4]";
+echo "<br>";
 // Associative Arrays with keys and values
 $asso=[
     "name"=>"Mie",
