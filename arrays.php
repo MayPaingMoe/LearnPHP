@@ -69,4 +69,4 @@ var_dump($data2);
 
 var_dump($data2["Language"][1]);
 
-
+$new =["Hello","Mie"];
