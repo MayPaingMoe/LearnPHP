@@ -22,12 +22,12 @@
  $e=100;
 
  if($e>100){
-    echo "Greater than 100";
+    echo "The Number is Greater than 100";
 
     if($e>200){
-        echo "Greater than 200";}
+        echo "The Number is Greater than 200";}
         else{
-            echo "Less than 200";
+            echo "The Number is Less than 200";
         }
     }
  
