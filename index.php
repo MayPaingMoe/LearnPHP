@@ -12,4 +12,11 @@ echo "<br>";
 //require "functions.php";
 // require "class(and)obj.php";//call the oop php
 // require "constructor(oop).php";
-require "inheritance.php";
+//require "inheritance.php";
+
+
+//  require "abstract.php";
+
+//  $res -> friedNoddle();
+
+require "encapsulation.php";
