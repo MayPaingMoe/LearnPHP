@@ -36,7 +36,7 @@ echo $stu->age;
 
 //private is like  protected
 //the only difference is inheritance
-//protected will be fatal error(uncaught)
+//protected child class can be called inside the class
 //private will be warnning error (undefine)
 
 //getter setter

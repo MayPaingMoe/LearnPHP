@@ -19,3 +19,6 @@
     public
 
 2. getter & setter functions
+
+## single file run 
+php -S localhost:8000 index.php
