@@ -1,10 +1,19 @@
 <?php
+//poly interface = abstract
+//can create obj cuz of abstract
 
-//abstract mean not need to know the function just the output
-class Restaurant{
-    public function friedNoddle(){
-        echo "This is friedNoddle";
+abstract class student{
+    public $name="Mie";
+    public $age=19;
+}
+
+class StudentInfo extends student{
+    public function info(){
+        echo $this->name."-".$this->age;
     }
 }
 
-$res=new Restaurant();
+$info=new StudentInfo();
+$info->info();
+
+//
