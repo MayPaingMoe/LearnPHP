@@ -23,3 +23,15 @@ INSERT INTO `USERS`(`name`,`email`,`gender`,`dob`,`age`)VALUES('John Doe','john@
 SELECT * FROM USERS;
 -- take less time
 SELECT (`name`,`email`,`gender`,`dob`,`age`) FROM USERS;
+
+-- edit
+SELECT * FROM `USERS` WHERE `id`=4;
+
+-- update
+UPDATE `USERS` SET `name`='Harry' WHERE `id`=2;
+UPDATE `USERS` SET `email`='harry@gmail.com' WHERE `id`=2;
+UPDATE `USERS` SET `dob`='1997-02-02' and `age`=29 WHERE `id`=2;
+
+-- delete
+
+DELETE FROM `USERS` WHERE `id`=3;
