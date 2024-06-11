@@ -15,7 +15,8 @@ create table `users`(
 
  -- insert data
 
-INSERT INTO `USERS`(`name`,`email`,`gender`,`dob`,`age`)VALUES('John Doe','john@gmail.com','male','1998-01-01','27'),
+INSERT INTO `USERS`(`name`,`email`,`gender`,`dob`,`age`)VALUES
+('John Doe','john@gmail.com','male','1998-01-01','27'),
 ('Mary','mary@gmail.com','female','1998-05-01','27'),
 ('Jane','jane@gmail.com','male','1998-01-06','27');
 
