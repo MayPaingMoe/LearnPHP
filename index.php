@@ -19,4 +19,5 @@ echo "<br>";
 
 //  $res -> friedNoddle();
 
-require "encapsulation.php";
+// require "encapsulation.php";
+require "pdo.php";
