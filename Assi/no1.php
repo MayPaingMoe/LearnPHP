@@ -9,12 +9,14 @@
     
     <?php
 
-    $total =0;
-    for($i=0;$i<=30;$i++){
-        $total +=$i;
+    $i=1;
+    while($i<11){
+        echo "$i";
+$i++;
+        if($i<11){
+            echo "-";
+        }
     }
-    echo "The answer of adding all integers between 0 and 30 is = ".$total;
-
     ?>
 
 

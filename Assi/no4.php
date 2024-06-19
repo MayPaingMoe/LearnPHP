@@ -6,22 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    
 
-    
-<?php
-  echo "<table bordered cellpadding='3px' cellspacing='0px'>";
-  for($i = 1; $i <= 6; $i++){
-    echo "<tr>";
-    for($j = 1; $j <= 5; $j++){
-      echo "<td>";
-      echo $i . "*" . $j . "=" . ($i * $j);
-      echo "</td>";
+<table border="1" cellpadding='3px' cellspacing='0px'>
+    <?php
+    for($i = 1; $i <= 6; $i++){
+        echo "<tr>";
+        for($j = 1; $j <= 5; $j++){
+            echo "<td>";
+            echo $i . "*" . $j . "=" . ($i * $j);
+            echo "</td>";
+        }
+        echo "</tr>";
     }
-    echo "</tr>";
-  }
-  echo "</table>";
-?>
+    ?>
+</table>
 
 </body>
 </html>
