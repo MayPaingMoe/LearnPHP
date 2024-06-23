@@ -5,7 +5,7 @@
 // read ();
 // edit();
 // update();
-delete();
+// delete();
 
 function create(){
     try{
