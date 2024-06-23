@@ -2,7 +2,11 @@
  echo "<pre/>";
 
 //create();
-read ();
+// read ();
+// edit();
+// update();
+delete();
+
 function create(){
     try{
         // connect to database
@@ -74,6 +78,95 @@ echo "Data insert Complete";
 }
 }
 
-   
+   //edit
+   function edit(){
 
+    try{
+        $pdo=new PDO("mysql:host=localhost;dbname=school","root");
+
+        $statement=$pdo->query("SELECT * FROM `STUDENT` WHERE `id`=2;");
+    
+       
    
+        $students=$statement->fetch(PDO::FETCH_OBJ);
+     
+
+     if($students){
+        var_dump($students);
+        echo "Edit Successful";
+     }
+     else{
+        echo "Failed";
+     }
+
+}catch(PDOException $e){
+    echo "<pre/>";
+    var_dump($e->getMessage());
+   
+}catch(Exception $e){
+
+    var_dump(($e->getMessage()));
+}
+   }
+
+   //update
+  function update(){
+    try{
+        $pdo=new PDO("mysql:host=localhost;dbname=school","root");
+
+        $statement=$pdo->query("UPDATE `STUDENT` SET `name`='Harry' WHERE `id`=2;");
+    
+       
+   
+        $students=$statement->fetch(PDO::FETCH_OBJ);
+     
+
+     if($students){
+        var_dump($students);
+        echo "Update Successful";
+     }
+     else{
+        echo "Failed";
+     }
+
+}catch(PDOException $e){
+    echo "<pre/>";
+    var_dump($e->getMessage());
+   
+}catch(Exception $e){
+
+    var_dump(($e->getMessage()));
+}
+
+   }
+
+   //delete
+
+   function delete(){
+     try{
+        $pdo=new PDO("mysql:host=localhost;dbname=school","root");
+
+        $statement=$pdo->query("DELETE FROM `STUDENT` WHERE `id`=3;");
+    
+       
+   
+        $students=$statement->fetch(PDO::FETCH_OBJ);
+     
+
+     if($students){
+        var_dump($students);
+        echo "Delete Successful";
+     }
+     else{
+        echo "Failed";
+     }
+
+}catch(PDOException $e){
+    echo "<pre/>";
+    var_dump($e->getMessage());
+   
+}catch(Exception $e){
+
+    var_dump(($e->getMessage()));
+}
+   }
