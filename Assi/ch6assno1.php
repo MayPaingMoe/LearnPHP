@@ -1,11 +1,11 @@
-
-<!-- // $color=array("white","green","red","blue","black"); -->
+<?php
+$color=array("white","green","red","blue","black"); 
  
-<!-- // echo "\"The memory of that scene for me is like a frame of film forever 
-//     frozen at that memont: the $color[2] carpet,the $color[1] lawn,
-//     the $color[0] house, the leaden sky.The new president and his first lady. -Richard M.Nixon\""; -->
-
-<!-- <!DOCTYPE html>
+ echo "\"The memory of that scene for me is like a frame of film forever 
+     frozen at that memont: the $color[2] carpet,the $color[1] lawn,
+     the $color[0] house, the leaden sky.The new president and his first lady. -Richard M.Nixon\"";
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,7 @@
 </head>
 <body>
 
-
+<?php
 $color=array("white","green","red");
 echo "Output: <br>".implode(",",$color);
     ?>
@@ -25,7 +25,7 @@ echo "Output: <br>".implode(",",$color);
     </ul>
 </body>
 </html>
- -->
+
 <?php 
 
  $ceu = array( "Italy"=>"Rome", "Luxembourg"=>"Luxembourg", "Belgium"=> "Brussels", "Denmark"=>"Copenhagen", 
