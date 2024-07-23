@@ -25,3 +25,11 @@ php -S localhost:8000 index.php
 
 
 ## Polymorphism
+
+## cleancode
+
+1. controller
+2. view
+3. pdo
+4. n-layer
+5. 
