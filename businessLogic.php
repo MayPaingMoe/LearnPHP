@@ -10,12 +10,12 @@ class bL_Student extends DB{
         $read=$pdo->query("Select * from `student`");
 
         $stuR=$read->fetchAll(PDO::FETCH_OBJ);
-        // return $stuR;
-        foreach($stuR as $student){
-            echo "<pre/>";
+        return $stuR;
+      //   foreach($stuR as $student){
+      //       echo "<pre/>";
             // catch with obj
-            echo $student ->name. "-". $student ->email."-".$student ->gender. "-". $student ->dob."<br>";
-           }
+   //          echo $student ->name. "-". $student ->email."-".$student ->gender. "-". $student ->dob."<br>";
+   //         }
      }
 
      public function edit($id){
