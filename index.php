@@ -31,10 +31,11 @@ $read=$blogic->read();
         <div class="row" justify-content-center>
             <div class="col-10 mt-5" >
                 <h3>Student List</h3>
-                <a href="" class="btn btn-primary mb-2">Create New Students</a>
+                <a href="createPage.php" class="btn btn-primary mb-2">Create New Students</a>
     <table class="table" border="1">
         <thead>
             <tr>
+                <th>Id</th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Gender</th>
@@ -46,13 +47,14 @@ $read=$blogic->read();
         <tbody>
             <?php foreach($read as $s):?>
             <tr>
+                <td><?php echo "$s->id" ?></td>
                 <td><?php echo "$s->name" ?></td>
                 <td><?php echo "$s->email"?></td>
                 <td><?php echo "$s->gender" ?></td>
                 <td><?php echo "$s->dob" ?></td>
                 <td><?php echo "$s->age" ?></td>
                 <td>
-                    <a href="" class="btn btn-warning" >Edit</a>
+                    <a href="editPage.php?id=<?php echo "$s->id"?>" class="btn btn-warning" >Edit?</a>
                     <a href="" class="btn btn-danger">Delete</a>
                 </td>
             </tr>

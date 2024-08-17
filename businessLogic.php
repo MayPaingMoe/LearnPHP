@@ -20,11 +20,15 @@ class bL_Student extends DB{
 
      public function edit($id){
         $pdo=$this->connect();
-        $edit=$pdo->query("SELECT * FROM `STUDENT` WHERE `id`=$id;");
+        $edit=$pdo->prepare("SELECT * FROM `STUDENT` WHERE `id`=:id;");
     
-        $student=$edit->fetch(PDO::FETCH_OBJ);
-        //  return $student;
-         echo $student ->id.".".$student ->name. "-". $student ->email."-".$student ->gender. "-". $student ->dob."<br>";
+        $edit->bindParam(":id",$id);
+        if($edit->execute()){
+         $student=$edit->fetch(PDO::FETCH_OBJ);
+         return $student;
+        }
+       
+         // echo $student ->id.".".$student ->name. "-". $student ->email."-".$student ->gender. "-". $student ->dob."<br>";
         
      }
 
@@ -57,10 +61,20 @@ class bL_Student extends DB{
     public function create($name,$email,$gender,$dob,$age){
         $pdo= $this -> connect();
      
-        $newStuC=$pdo->query("INSERT INTO `STUDENT`(`name`,`email`,`gender`,`dob`,`age`)
-        VALUES('$name','$email','$gender','$dob','$age');");
-        if($newStuC){
+        $newStuC=$pdo->prepare("INSERT INTO `STUDENT`(`name`,`email`,`gender`,`dob`,`age`)
+        VALUES(:name,:email,:gender,:dob,:age);");
+
+         $newStuC->bindParam(":name",$name);
+         $newStuC->bindParam(":email",$email);
+         $newStuC->bindParam(":gender",$gender);
+         $newStuC->bindParam(":dob",$dob);
+         $newStuC->bindParam(":age",$age);
+
+        if( $newStuC->execute()){
             echo "New Student Create Successful!";
+        }
+        else {
+         echo "New Student Create Failed";
         }
      }
 

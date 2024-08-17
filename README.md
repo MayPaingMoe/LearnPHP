@@ -32,4 +32,4 @@ php -S localhost:8000 index.php
 2. view
 3. pdo
 4. n-layer
-5. 
+5. bineParam()
