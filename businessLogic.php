@@ -4,6 +4,7 @@
 require_once "dataAccess.php";
 
 class bL_Student extends DB{
+   
     public function read(){
         $pdo=$this->connect();
 
